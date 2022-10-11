@@ -71,7 +71,7 @@ export async function getStaticProps({
         locale: locale || {},
         uid,
       },
-      // revalidate: 60,
+      revalidate: 60,
     };yarn 
   } catch (error) {
     return {
