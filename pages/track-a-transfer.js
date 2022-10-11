@@ -51,6 +51,7 @@ export async function getStaticProps({ locale, locales, previewData }) {
         locales: locales || {},
         locale: locale || {},
       },
+      revalidate: 60,
     };
   } catch (error) {
     return {
